@@ -2,6 +2,7 @@ import { fetchapi } from "./fetchapi";
 
 export const dataprocessor = async (input) => {
     const data = await fetchapi(input)
+        .catch((err) => console.log(err))
     let apidata = {
         weatherMain: 0,
         weatherIcon: 0,
@@ -12,6 +13,7 @@ export const dataprocessor = async (input) => {
         clouds: 0,
         sunrise: 0,
         sunset: 0,
+        name: 0,
     }
 
     apidata.weatherMain = data.weather[0].main
@@ -23,6 +25,7 @@ export const dataprocessor = async (input) => {
     apidata.clouds = data.clouds.all
     apidata.sunrise = data.sys.sunrise
     apidata.sunset = data.sys.sunset
-    
+    apidata.name = data.name
+
     return apidata
 }

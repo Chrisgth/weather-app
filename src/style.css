@@ -1,0 +1,17 @@
+* {
+    border: 2px solid black;
+}
+
+#information {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr
+}
+
+#overview{
+    grid-column: 1 / 3;
+}
+
+#sunrisesunset{
+    grid-column: 1 / 3;
+    display: flex;
+}
