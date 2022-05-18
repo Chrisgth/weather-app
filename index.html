@@ -8,8 +8,41 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <input type="text" id="location">
-    <button id="search">Search</button>
-    <p id="weatherinfo"></p>
+    <main>
+        <div id="searchbar">
+            <input type="text" id="location">
+            <button id="search">Search</button>
+        </div>
+        <div id="information">
+            <div id="overview">
+                <div id="name">Vilnius</div>
+                <div id="general">
+                    <div id="weatherParameter">Cloudy</div>
+                    <img src="" alt="weatherIcon" id="weatherIcon">
+                </div>
+                <div id="temperature">10&deg;C</div>
+                <div id="feelsLike">Feels like 8deg</div>
+                <div id="humidity">45%</div>
+            </div>
+            <div id="wind">
+                <img src="" alt="windIcon" id="windIcon">
+                <div id="windspeed">1km</div>
+            </div>
+            <div id="clouds">
+                <img src="" alt="cloudIcon" id="cloudIcon">
+                <div id="cloudiness">60%</div>
+            </div>
+            <div id="sunrisesunset">
+                <div>
+                    <img src="" alt="sunriseIcon" id="sunriseIcon">
+                    <div id="sunrise">4PM</div>
+                </div>
+                <div>
+                    <img src="" alt="sunsetIcon" id="sunsetIcon">
+                    <div id="sunset">6PM</div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
