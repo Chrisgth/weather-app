@@ -10,6 +10,7 @@ export default function displayData(input) {
     const sunrise = document.getElementById('sunrise')
     const sunset = document.getElementById('sunset')
 
+
     function padTo2Digits(num) {
     return String(num).padStart(2, '0');
     }
