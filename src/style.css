@@ -1,21 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-    border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #CACC90;
+}
+
+main {
+    height: fit-content;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #8BA6A9;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
 }
 
 #information {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr
 }
 
 #overview {
@@ -26,13 +41,70 @@ body {
 
 #name {
     grid-column: 1 / end;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 2px solid black;
 }
 
 #general {
-    grid-row: 2 / end
+    grid-row: 2 / end;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-#sunrisesunset{
+#sunrisesunset {
     grid-column: 1 / 3;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr
+}
+
+#numerals {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+}
+
+#general, #wind, #clouds, #sunrisesunset > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#searchbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-bottom: 2px solid black;
+}
+#location {
+    width: max-content;
+    flex-grow: 1;
+    background-color: #8BA6A9;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 0;
+}
+
+#location::placeholder {
+    color: lightgray;
+}
+
+#location:focus {
+    outline: none;
+}
+
+#numerals > div {
+    text-align: center;
+}
+
+#search {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
