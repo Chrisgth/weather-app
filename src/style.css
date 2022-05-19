@@ -12,8 +12,8 @@ body, html {
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #CACC90;
 }
 
@@ -26,6 +26,7 @@ main {
     color: white;
     border-radius: 8px;
     border: 2px solid black;
+    margin-top: 15vh
 }
 
 #information {
@@ -107,4 +108,11 @@ main {
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+#header {
+    background-color: #424242;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
