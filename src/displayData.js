@@ -1,5 +1,4 @@
 export default function displayData(input) {
-    console.log(input)
     const name = document.getElementById('name')
     const weatherParameter = document.getElementById('weatherParameter')
     const weatherIcon = document.getElementById('weatherIcon')

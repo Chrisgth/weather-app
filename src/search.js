@@ -6,7 +6,6 @@ export default function search(pageloader) {
         async function init() {
             const pageLoadLocation = await dataprocessor('Vilnius')
             displayData(pageLoadLocation)
-            console.log(pageLoadLocation)
         }
         init();
     }
